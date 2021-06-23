@@ -5,6 +5,8 @@ import axios from 'axios'
 import NavBar from './components/NavBar.js'
 import Show from './pages/Show.js'
 import New from './pages/New.js'
+import Pokemon from './images/Pokemon.png'
+
 
 const API_BASE = apiURL()
 
@@ -43,7 +45,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="App" style={{backgroundImage : Pokemon}}>
       <Router>
       <NavBar/>
       <main>
