@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import { useParams, useHistory, withRouter} from "react-router-dom";
+import { useParams, useHistory, withRouter } from "react-router-dom";
 import axios from "axios";
 import { apiURL } from "../util/apiURL";
 
@@ -17,7 +17,6 @@ function TransactionIndex() {
       .then((response) => {
         const { data } = response;
         setTransaction(data);
-        console.log(setTransaction(data));
       })
       .catch((e) => {
         history.push("/page-not-found");

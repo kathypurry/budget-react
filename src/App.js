@@ -49,15 +49,13 @@ function App() {
         <main>
           <Switch>
             <Route exact path="/transactions">
-              <Show
-                transactions={transactions}
-              />
+              <Show transactions={transactions} />
             </Route>
-            {/* <Route exact path="/transactions/:id">
-              <TransactionIndex />
-            </Route> */}
             <Route path="/transactions/new">
               <New addTransaction={addTransaction} />
+            </Route>
+            <Route exact path="/transactions/:index">
+              <TransactionIndex />
             </Route>
           </Switch>
         </main>
