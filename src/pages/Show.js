@@ -7,7 +7,7 @@ export default function Show({ transactions }) {
 
   useEffect(() => {
     let tranArray = transactions
-      .map((transaction) => String(transaction.amount))
+      .map((transaction) => Number(transaction.amount))
       .reduce((a, b) => a + b, 10000);
     setBalance(tranArray);
   }, [transactions]);
