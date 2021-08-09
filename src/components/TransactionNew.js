@@ -51,6 +51,7 @@ const TransactionEntry = (props) => {
           value={newTransaction.amount}
           type="number"
           onChange={handleText}
+          p
         />
         <br/>
         <input

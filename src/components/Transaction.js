@@ -5,7 +5,7 @@ export default function Transaction({ transaction, index }) {
 
   return (
     <div className="logTable">
-      <Link to={`/transactions/${index}`}>{transaction.date} </Link>{" "}
+      <Link to={`/transactions/${index}`}>{transaction.date}</Link>{" "}
       {transaction.name} : {transaction.amount} : {transaction.from}{" "}
     </div>
   );

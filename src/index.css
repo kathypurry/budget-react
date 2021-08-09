@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./images/Pokemon.png');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 
 code {
